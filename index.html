@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>COLLATE</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+		<link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+		<link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+
+		<script>
+			var userAgent = navigator.userAgent + '';
+			if (userAgent.indexOf('iPhone') > -1) {
+				document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+				var mobile_system = 'iphone';
+			} else if (userAgent.indexOf('Android') > -1) {
+				document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+				var mobile_system = 'android';
+			} else {
+				var mobile_system = '';
+			}
+		</script>
+
+		<script src="js/lib/jquery.js"></script>
+		<!-- your scripts here -->
+		<script src="js/app/app.js"></script>
+		<script src="js/app/bootstrap.js"></script>
+		<script src="js/lib/jquery.mobile.js"></script>
+		<style>
+			.ui-selectmenu.ui-popup .ui-input-search {
+				margin-left: .5em;
+				margin-right: .5em;
+			}
+			.ui-selectmenu.ui-dialog .ui-content {
+				padding-top: 0;
+			}
+			.ui-selectmenu.ui-dialog .ui-selectmenu-list {
+				margin-top: 0;
+			}
+			.ui-selectmenu.ui-popup .ui-selectmenu-list li.ui-first-child .ui-btn {
+				border-top-width: 1px;
+				-webkit-border-radius: 0;
+				border-radius: 0;
+			}
+			.ui-selectmenu.ui-dialog .ui-header {
+				border-bottom-width: 1px;
+			}
+			a {
+				text-decoration: none;
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<div data-role="page" id="landingPage" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h1>EC</h1>
+				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+
+			</div><!-- /header -->
+			<center><img src="img.jpg" height="300" width="400"></center>
+			<div data-role="content" style="text-shadow: none">
+				
+				<a href="#declare" data-transition="flip"  data-role="button" data-transition='slide'>
+					Declare
+				</a>
+				<a href="#results" data-transition="flip"  data-role="button" data-transition='slide'>
+					Result
+				</a>
+				<br />
+				
+			</div><!-- /content -->
+		</div><!-- /page -->
+
+		<div data-role="page" id="declare" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h1>EC</h1>
+				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+			</div><!-- /header -->
+			<div data-role="content" style="text-shadow: none">
+				
+				<select id= "filter-menu" >
+				    <option value="">Regions</option>
+					<option value="NR">Northern Region</option>
+					<option value="SR">Southern Regions</option>
+					<option value="GAR">Greater Accra REgion</option>
+					<option value="BAR">Brong Ahafo Region</option>
+					<option value="CR">Central Region</option>
+					<option value="UER">Upper East Region</option>
+					<option value="UWR">Upper West Region</option>
+					<option value="VR">Volta Region</option>
+					<option value="ER">Eastern Region</option>
+				</select>
+				<br>
+				<br>
+				<select id= "filter-menu" >
+				   <option value="">Constituencies</option>
+					<option value="NR">Northern Region Constituencies </option>
+					<option value="SR">Southern Regions Constituencies</option>
+					<option value="GAR">Greater Accra REgion Constituencies</option>
+					<option value="BAR">Brong Ahafo Region Constituency</option>
+					<option value="CR">Central Region Constituencies</option>
+					<option value="UER">Upper East Region Constituencies</option>
+					<option value="UWR">Upper West Region Constituencies</option>
+					<option value="VR">Volta Region Constituencies</option>
+					<option value="ER">Eastern Region Constituencies</option>
+				</select>
+					
+				<br>
+				<br>
+
+				<form action= >
+				AFA: <br>
+				<input type="text" name="AFA">
+				<br>
+				CPG:<br>
+				<input type="text" name="CPG">
+				<br>
+				BOF:<br>
+				<input type="text" name="BOF">
+				<br>
+				<br>
+<a href="#results" data-transition="flip"  data-role="button" data-transition='slide'>
+					Submit
+				</a></form>
+
+				</form>
+				
+
+				<br />
+
+
+			</div><!-- /content -->
+		</div><!-- /page -->
+
+
+		<div data-role="page" id="results" style="background: white">
+
+			<div data-role="header" style="text-shadow: none">
+				<h1>MY HUB</h1>
+				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
+			</div><!-- /header -->
+
+
+
+			<div data-role="content" style="text-shadow: none">
+				
+				<h1>Welcome to my third page</h1>
+					
+				<br />
+				
+			</div><!-- /content -->
+
+
+		</div><!-- /page -->
+
+	</body>
+</html>
