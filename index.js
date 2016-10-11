@@ -6,7 +6,7 @@
 		pictureSource = navigator.camera.PictureSourceType;
 		destinationType =navigator.camera.destinationType;
 	
-		document.getElementById(capturePhoto).onclick = function () {
+		document.getElementById('capturePhoto').onclick = function () {
 			navigator.camera.getPicture(onPhotoDataSuccess, onFail, {
 				quality : 50,
 				destinationType :destinationType.DATA_URL
