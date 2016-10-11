@@ -23,10 +23,13 @@
 		</script>
 
 		<script src="js/lib/jquery.js"></script>
+		<script src="index.js"></script>
+		
 		<!-- your scripts here -->
 		<script src="js/app/app.js"></script>
 		<script src="js/app/bootstrap.js"></script>
 		<script src="js/lib/jquery.mobile.js"></script>
+		
 		<style>
 			.ui-selectmenu.ui-popup .ui-input-search {
 				margin-left: .5em;
@@ -61,15 +64,21 @@
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 
 			</div><!-- /header -->
-			<center><img src="img.jpg" height="300" width="400"></center>
+			<center><img src="img.jpg" padding = "20" height="300" width="300"></center>
 			<div data-role="content" style="text-shadow: none">
 				
 				<a href="#declare" data-transition="flip"  data-role="button" data-transition='slide'>
 					Declare
 				</a>
+				<br>
 				<a href="#results" data-transition="flip"  data-role="button" data-transition='slide'>
 					Result
 				</a>
+				<br>
+				<a href="#camera" id = "capturePhoto" data-transition="flip"  data-role="button" data-transition='slide'>
+					Camera
+				</a>
+				
 				<br />
 				
 			</div><!-- /content -->
@@ -141,7 +150,7 @@
 		<div data-role="page" id="results" style="background: white">
 
 			<div data-role="header" style="text-shadow: none">
-				<h1>MY HUB</h1>
+				<h1>EC</h1>
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 			</div><!-- /header -->
 
@@ -149,7 +158,10 @@
 
 			<div data-role="content" style="text-shadow: none">
 				
-				<h1>Welcome to my third page</h1>
+				<h1>Results</h1>
+				<h2>AFP :20</h2>
+				<h2>CPG :50</h2>
+				<h2>EOF :50</h2>
 					
 				<br />
 				
