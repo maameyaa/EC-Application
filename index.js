@@ -1,5 +1,5 @@
 (function () {
-	document.addEventListener("deviceready", onDeviceReady.bind(this), false)
+	document.addEventListener('deviceready', onDeviceReady.bind(this), false)
 	var pictureSource;
 	var destinationType;
 	function onDeviceReady(){
@@ -20,4 +20,7 @@
 		smallImage.src = "data:image.jpeg;base64,"+imageData;
 	}
 	
-})
+	function onFail(message){
+		alert('Failed because: '+message);
+	}
+})();
