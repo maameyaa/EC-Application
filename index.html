@@ -60,19 +60,22 @@
 		<div data-role="page" id="landingPage" style="background: white">
 
 			<div data-role="header" style="text-shadow: none">
-				<h1>EC</h1>
+				<h1>AshTour</h1>
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 
 			</div><!-- /header -->
-			<center><img src="img.jpg" padding = "20" height="300" width="300"></center>
+			<center><img src="bus.png" height="500" width="800"></center>
+			
+			
+			
 			<div data-role="content" style="text-shadow: none">
 				
-				<a href="#declare" data-transition="flip"  data-role="button" data-transition='slide'>
-					Declare
+				<a href="#departments" data-transition="flip"  data-role="button" data-transition='slide'>
+					Departments
 				</a>
 				<br>
 				<a href="#results" data-transition="flip"  data-role="button" data-transition='slide'>
-					Result
+					About
 				</a>
 				<br>
 				<!--<a href="#camera" id = "capturePhoto" data-transition="flip"  data-role="button" data-transition='slide'>
@@ -83,6 +86,8 @@
 
 				<div><center><img class ="lazy" style="display: none; width:100%; height: 100;" id = "smallImage" src="" ></center></div>
 				<br />
+				
+				<button onclick= barcodeScanner() >Barcode Scanner</button>
 
 				<video width = "480" controls>
 				<source src="video.mp4" type="video/mp4">
@@ -92,76 +97,49 @@
 					<source src="" type="">
 				</audio>
 				
+				
+				
 			</div><!-- /content -->
+			
+			
+			
 		</div><!-- /page -->
 
-		<div data-role="page" id="declare" style="background: white">
+		<div data-role="page" id="departments" style="background: white">
 
 			<div data-role="header" style="text-shadow: none">
-				<h1>EC</h1>
+				<center><h1>AshTour</h1></center>
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 			</div><!-- /header -->
+			
 			<div data-role="content" style="text-shadow: none">
+			
+			<div><center><h3>Administration</h3></center></div>
+			
+			<a href="#admin" data-transition="flip"  data-role="button" data-transition='slide'>
+			<center><img src="admin.png" height="200" width="300"></center>
+			</a>
+			
+			<div><center><h3>Computer Science</h3></center></div>
+			
+			<a href="#landingPage" data-transition="flip"  data-role="button" data-transition='slide'>
+			<center><img src="cs.png" height="200" width="300"></center>
+			</a>
 				
-				<select id= "filter-menu" >
-				    <option value="">Regions</option>
-					<option value="NR">Northern Region</option>
-					<option value="SR">Southern Regions</option>
-					<option value="GAR">Greater Accra REgion</option>
-					<option value="BAR">Brong Ahafo Region</option>
-					<option value="CR">Central Region</option>
-					<option value="UER">Upper East Region</option>
-					<option value="UWR">Upper West Region</option>
-					<option value="VR">Volta Region</option>
-					<option value="ER">Eastern Region</option>
-				</select>
-				<br>
-				<br>
-				<select id= "filter-menu" >
-				   <option value="">Constituencies</option>
-					<option value="NR">Northern Region Constituencies </option>
-					<option value="SR">Southern Regions Constituencies</option>
-					<option value="GAR">Greater Accra REgion Constituencies</option>
-					<option value="BAR">Brong Ahafo Region Constituency</option>
-					<option value="CR">Central Region Constituencies</option>
-					<option value="UER">Upper East Region Constituencies</option>
-					<option value="UWR">Upper West Region Constituencies</option>
-					<option value="VR">Volta Region Constituencies</option>
-					<option value="ER">Eastern Region Constituencies</option>
-				</select>
-					
-				<br>
-				<br>
-
-				<form action= >
-				AFA: <br>
-				<input type="text" name="AFA">
-				<br>
-				CPG:<br>
-				<input type="text" name="CPG">
-				<br>
-				BOF:<br>
-				<input type="text" name="BOF">
-				<br>
-				<br>
-<a href="#results" data-transition="flip"  data-role="button" data-transition='slide'>
-					Submit
-				</a></form>
-
-				</form>
 				
-
-				<br />
-
-
+          <a href="#landingPage" data-transition="flip"  data-role="button" data-transition='slide'>
+					Return
+		  </a> 
 			</div><!-- /content -->
 		</div><!-- /page -->
 
 
-		<div data-role="page" id="results" style="background: white">
+
+
+		<div data-role="page" id="admin" style="background: white">
 
 			<div data-role="header" style="text-shadow: none">
-				<h1>EC</h1>
+				<h1>AshTour</h1>
 				<a href="index.html" data-role="button" data-icon="refresh" data-iconpos="notext" style="background: white;border: none;">Refresh</a>
 			</div><!-- /header -->
 
@@ -169,12 +147,15 @@
 
 			<div data-role="content" style="text-shadow: none">
 				
-				<h1>Results</h1>
-				<h2>AFP :20</h2>
-				<h2>CPG :50</h2>
-				<h2>EOF :50</h2>
-					
-				<br />
+				<center><img src="cs.png" height="500" width="500"></center>
+				
+					<center><h2>
+				This houses the faculty and staff at Ashesi. It is located at the entrance of the school and consists mostly of offices
+				</h2>	</center>
+				
+				<a href="#landingPage" data-transition="flip"  data-role="button" data-transition='slide'>
+							Return
+				  </a> 
 				
 			</div><!-- /content -->
 
